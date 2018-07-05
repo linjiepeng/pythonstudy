@@ -10,6 +10,8 @@ def yanghui(max):
     A=[]
     n=0
     while n<max:
+        if L is None:
+            L=[]
         L.append(1)
         A.append(1)
         
@@ -31,3 +33,22 @@ from functools import reduce
 def fn(x,y):
     return x*10+y
 print(reduce(fn,[1,3,5,7,9]))
+import math
+
+def move(n,a,b,c):
+    if n==1:
+        print(a,'->',c)
+        
+    else:
+        move(n-1,a,c,b)
+        move(1,a,b,c)
+        move(n-1,b,a,c)
+        
+move(2,'A','B','C')
+def trim(s):
+    while s[:1] == ' ':
+        s = s[1:]
+    while s[-1:] == ' ':
+        s = s[:-1]
+    print(s)
+trim('  asd  ')
