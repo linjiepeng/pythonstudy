@@ -37,10 +37,10 @@ while enter:
         print("BMI指数%.1f 肥胖"%bmi)
     else:
         print("BMI指数%.1f 严重肥胖"%bmi)
-    enter1=input("select'y' or 'n'")
+    enter1=input("按y继续，按其他任意键退出")
     if enter1 == 'y':
         enter = True
-    elif enter1 =='n':
+    elif enter1 != 'y':
         enter = False
         
     

@@ -27,7 +27,7 @@ def yanghui(max):
             A[x]=L[x]
         n=n+1
     
-yanghui(10)
+yanghui(20)
 list(map(yanghui,[1,2,3]))
 from functools import reduce
 def fn(x,y):
